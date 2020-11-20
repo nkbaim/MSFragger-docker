@@ -3,7 +3,7 @@
 FROM centos:centos7
 MAINTAINER Du,Yang
 
-run mkdir /usr/local/jdk
+RUN mkdir /usr/local/jdk
 WORKDIR /usr/local/jdk
 ADD jdk-8u111-linux-x64.tar.gz /usr/local/jdk
 ENV JAVA_HOME /usr/local/jdk/jdk1.8.0_111
